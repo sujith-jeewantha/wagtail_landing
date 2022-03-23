@@ -1,0 +1,64 @@
+{% extends "landing_base.html" %}
+
+
+
+{% load static %}
+
+
+{% load wagtailcore_tags wagtailimages_tags %}
+
+{% block content %}
+
+
+
+ <!-- Modal -->
+ <div class="modal fade home-model " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog home-model-dialog">
+      <div class="modal-content homePageModal">
+        <div class="modal-header" style="border-bottom: none;">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            The Foundation acknowledges First Nations people as the
+            Traditional Owners and Custodians of the waterways and
+            of the land on which we live and work, and pays respect to
+            their Elders past, present and emerging.
+        </div>
+        <div class="modal-footer" style="border-top: none;">
+          <button type="button" class="btn btn-primary home-page-button" style="margin:auto">Go to site</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+<div class="home-page-container">
+<div class=" container">
+  <div class="row">
+
+    <div class="container banner-container">
+        <div class="row banner-text">
+            <h1 class="landingpage_header">Ut wisi enim ad minim veniam, quis nostrud</h1>
+
+            <!-- Button trigger modal -->
+
+            <button type="button" class="btn btn-primary home-page-button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Button
+            </button>
+        </div>
+
+    </div>
+
+  
+
+  
+ 
+
+  </div>
+</div>
+</div>
+
+</div>
+
+
+{% endblock %}
