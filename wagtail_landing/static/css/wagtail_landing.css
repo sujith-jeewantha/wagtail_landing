@@ -11460,7 +11460,6 @@ nav a:hover::after {
 	background: url('../images/footer/Footer\ Oattern.png') center center;
 	background-size: cover;
 	background-color: #ddd;
-	height: 260px;
   width: 100%;
   text-align: center;
   font-size: 0.9rem;
@@ -11542,6 +11541,19 @@ nav a:hover::after {
   background-size: cover;
 }
 
+.content-page-background{
+  /* The image used */
+background-image: url("../images/Background-Pattern-Header~1.png");
+
+/* Full height */
+height: 99vh; 
+
+/* Center and scale the image nicely */
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+
 .home-page-container {
     height: 50vh;
 }
@@ -11578,6 +11590,24 @@ nav a:hover::after {
     border-bottom-style: none;
     padding: 10px;
     color: white;
+  }
+
+  .fa-facebook-b {
+    text-decoration: none;
+    padding: 10px;
+    color: black;
+  }
+
+  .fa-twitter-b {
+    border-bottom-style: none;
+    padding: 10px;
+    color: black;
+  }
+
+  .fa-instagram-b {
+    border-bottom-style: none;
+    padding: 10px;
+    color: black;
   }
 
   .social-buttons {
