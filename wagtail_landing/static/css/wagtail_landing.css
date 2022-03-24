@@ -11413,7 +11413,7 @@ nav a:hover::after {
   position: relative;
   background-image: url('../images/Background-Pattern~1.png');
 
-  height: 150vh; 
+  /* height: 150vh;  */
 
   background-position: center;
   background-repeat: no-repeat;
@@ -11556,6 +11556,7 @@ background-image: url("../images/Background-Pattern-Header~1.png");
 height: 99vh; 
 
 /* Center and scale the image nicely */
+z-index: 2;
 background-position: center;
 background-repeat: no-repeat;
 background-size: cover;
@@ -11593,24 +11594,14 @@ background-size: cover;
   border: none;
   border-radius: 0px;
   background-color: #ffffff;
-  color: #000;
   margin: auto;
-  align-content: center;
-  width: 110px;
-  height: 55px;
-  font-weight: 700;
 }
 
 .content-b-two {
   border: none;
   border-radius: 0px;
   background-color: #b3b300;
-  color: #000;
   margin: auto;
-  align-content: center;
-  width: 110px;
-  height: 55px;
-  font-weight: 700;
 }
 
 .content-b-three {
@@ -11620,9 +11611,6 @@ background-size: cover;
   color: #000;
   margin: auto;
   align-content: center;
-  width: 110px;
-  height: 55px;
-  font-weight: 400;
 }
 
 .content-b-four {
@@ -11632,9 +11620,6 @@ background-size: cover;
   color: #000;
   margin: auto;
   align-content: center;
-  width: 110px;
-  height: 55px;
-  font-weight: 700;
 }
 
 
@@ -11650,13 +11635,13 @@ background-size: cover;
   }
 
   .fa-twitter {
-    border-bottom-style: none;
+    text-decoration: none;
     padding: 10px;
     color: white;
   }
 
   .fa-instagram {
-    border-bottom-style: none;
+    text-decoration: none;
     padding: 10px;
     color: white;
   }
@@ -11668,13 +11653,13 @@ background-size: cover;
   }
 
   .fa-twitter-b {
-    border-bottom-style: none;
+    text-decoration: none;
     padding: 10px;
     color: black;
   }
 
   .fa-instagram-b {
-    border-bottom-style: none;
+    text-decoration: none;
     padding: 10px;
     color: black;
   }
@@ -11705,11 +11690,17 @@ background-size: cover;
       margin: 10vh auto 5vh;
   }
 
-  .contentpage_header{
-    width: 100vw;
+.contentpage_header{
     text-align: left;
     color: black;
     margin:10vh auto 10vh;
+}
+
+.contentpage_group_button{
+  width: 100vw;
+  text-align: left;
+  color: black;
+  margin:10vh auto 10vh;
 }
 
 .contentpage_sub_header{
@@ -11729,3 +11720,48 @@ background-size: cover;
    color: white;
    margin: 5px;
  }
+
+ .content-page-toggle-button{
+  display: none;
+  color: black;
+  margin: 5px;
+}
+
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  float: left;
+  margin: auto;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  /* display: none; */
+  position: relative;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
