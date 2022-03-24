@@ -11754,8 +11754,7 @@ background-size: cover;
 /* Style the tab */
 .tab {
   overflow: hidden;
-  border: 1px solid #ccc;
-  background-color: #f1f1f1;
+  background-color: #fff;
   justify-content: center;
 }
 
@@ -11786,10 +11785,11 @@ background-size: cover;
   display: none;
   position: relative;
   padding: 6px 12px;
-  border: 1px solid #ccc;
   border-top: none;
+  background-color: white;
 }
 
 .tab-includes{
   position: relative;
 }
+
