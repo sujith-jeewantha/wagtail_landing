@@ -11409,11 +11409,34 @@ nav a:hover::after {
   right: 0;
 }
 
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+#wrapper {
+  /* background-color: #e3f2fd; */
+  min-height: 100%;
+  height: auto !important;
+  margin-bottom: -50px; /* the bottom margin is the negative value of the footer's total height */
+}
+
+#wrapper:after {
+  content: "";
+  display: block;
+  height: 50px; /* the footer's total height */
+}
+
+#content {
+  height: 100%;
+}
+
 .sub-bg {
   position: relative;
   background-image: url('../images/Background-Pattern~1.png');
 
-  /* height: 150vh;  */
+  height: 150vh; 
 
   background-position: center;
   background-repeat: no-repeat;
@@ -11463,7 +11486,7 @@ nav a:hover::after {
 }
 
 .footer-bg {
-
+  /* height: 400px; */
 	background: url('../images/footer/Footer\ Oattern.png') center center;
 	background-size: cover;
 	background-color: #ddd;
@@ -11704,7 +11727,7 @@ background-size: cover;
 }
 
 .contentpage_sub_header{
-  width: 100vw;
+  /* width: 100vw; */
   text-align: justify;
   color: black;
   margin:5vh auto 5vh;
@@ -11733,6 +11756,7 @@ background-size: cover;
   overflow: hidden;
   border: 1px solid #ccc;
   background-color: #f1f1f1;
+  justify-content: center;
 }
 
 /* Style the buttons inside the tab */
@@ -11759,9 +11783,13 @@ background-size: cover;
 
 /* Style the tab content */
 .tabcontent {
-  /* display: none; */
+  display: none;
   position: relative;
   padding: 6px 12px;
   border: 1px solid #ccc;
   border-top: none;
+}
+
+.tab-includes{
+  position: relative;
 }
