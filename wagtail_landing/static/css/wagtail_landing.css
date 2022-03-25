@@ -11678,6 +11678,11 @@ background-size: cover;
     color: #000;
   }
 
+  .icon-footer{
+    text-decoration: none;
+    color: #000;
+  }
+
   .social-buttons {
       
       margin-top: 5%;
